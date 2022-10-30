@@ -1,58 +1,50 @@
-#sidebar{
-  width: 20%;
-  padding-top: 0px;
-  padding-left: 10px;
-  margin-right: 45px;
-  margin-left: 35px;
-  border: 3px solid grey;
-
-}
 /*Center Profile Photo*/
 .centerimage {
-display: block;
-margin-left: auto;
-margin-right: auto;
-width: 17%;
-height: 300px;
-width: 300px;
-object-fit: cover;
-border-radius: 50%;
-border: 3px solid orange;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 17%;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid orange;
 }
 
 /*Customizing footer and header*/
 #header {
-text-align: center;
-font-size: 110%;
-padding: 2rem;
+  text-align: center;
+  font-size: 110%;
+  padding: 2rem;
 
 }
+
 /*background colors and styling*/
 body {
-background-image: linear-gradient(265deg, #7b2f91, #7e7194, #72a994, #44e192);
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-padding: 1rem;
-margin-left:auto;
-margin-right:auto;
-display: flex;
-flex-direction:column;
+  background-image: linear-gradient(265deg, #7b2f91, #7e7194, #72a994, #44e192);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 
 /*Customizing side menu*/
 .sidemenu {
-list-style-type: none;
-padding: 0%;
-margin-bottom: 0%;
+  list-style-type: none;
+  padding: 0%;
+  margin-bottom: 0%;
 }
 
 /*Customizing Links colors*/
 a:link {
-color:none;
+  color: none;
 }
 
 a:visited {
-color:none;
+  color: none;
 }
 
 /*Heading formating and underlining*/
@@ -68,8 +60,9 @@ color:none;
 .heading10,
 .heading11,
 .heading12 {
-text-decoration: underline;
+  text-decoration: underline;
 }
+
 /*Customizing post headings*/
 .rem,
 .sen,
@@ -77,30 +70,34 @@ text-decoration: underline;
 .net,
 .int,
 .stu,
-.sal{
-text-decoration: underline;
-font-weight: bold;
+.sal {
+  text-decoration: underline;
+  font-weight: bold;
 }
 
-.icons{
-width: 5rem;
-margin: 0.5rem;
-height: 5rem;
+/*Spacing icons*/
+.icons {
+  width: 5rem;
+  margin: 0.5rem;
+  height: 5rem;
 }
 
-footer{
-text-align: center;
-text-decoration: underline;
-padding: 2rem;
+/*Underlying footer and aligning text*/
+footer {
+  text-align: center;
+  text-decoration: underline;
+  padding: 2rem;
 }
-.main{
+
+.main {
   display: flex;
   flex-direction: row;
   overflow: unset;
 
 }
 
-#sidebar{
+/*Customizing menu bar and postioning*/
+#sidebar {
   width: 20%;
   min-width: 153px;
   height: 200px;
