@@ -1,0 +1,69 @@
+/*Center Profile Photo */
+.centerimage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 17%;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+}
+
+/*background colors and styling*/
+body {
+  background-image: linear-gradient(265deg, #7b2f91, #7e7194, #72a994, #44e192);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Customizing footer and header*/
+#header {
+  text-align: center;
+  font-size: 110%;
+
+}
+
+/*Customizing side menu*/
+.sidemenu {
+  list-style-type: none;
+}
+
+/*Customizing Links colors*/
+a:link {
+  color:none;
+}
+
+a:visited {
+  color:none;
+}
+
+/*Heading formating and underlining*/
+.heading1,
+.heading2,
+.heading3,
+.heading4,
+.heading5,
+.heading6,
+.heading7,
+.heading8,
+.heading9,
+.heading10,
+.heading11,
+.heading12 {
+  text-decoration: underline;
+}
+/*cutomizing footer*/
+footer{
+  text-align: center;
+  text-decoration: underline;
+}
+/*Customizing post headings*/
+.rem,
+.sen,
+.jun,
+.net,
+.int,
+.stu,
+.sal{
+  text-decoration: underline;
+font-weight: bold;
+}
