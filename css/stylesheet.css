@@ -7,24 +7,33 @@
   height: 300px;
   width: 300px;
   object-fit: cover;
-}
-
-/*background colors and styling*/
-body {
-  background-image: linear-gradient(265deg, #7b2f91, #7e7194, #72a994, #44e192);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 50%;
+  border: 3px solid orange;
 }
 
 /*Customizing footer and header*/
 #header {
   text-align: center;
   font-size: 110%;
+  padding: 2rem;
 
 }
+/*background colors and styling*/
+body {
+  background-image: linear-gradient(265deg, #7b2f91, #7e7194, #72a994, #44e192);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 1rem;
+  margin-left:auto;
+  margin-right:auto;
+  display: flex;
+  flex-direction:column;
+}
+
 
 /*Customizing side menu*/
 .sidemenu {
   list-style-type: none;
+  padding: 0%;
 }
 
 /*Customizing Links colors*/
@@ -51,11 +60,6 @@ a:visited {
 .heading12 {
   text-decoration: underline;
 }
-/*cutomizing footer*/
-footer{
-  text-align: center;
-  text-decoration: underline;
-}
 /*Customizing post headings*/
 .rem,
 .sen,
@@ -67,3 +71,31 @@ footer{
   text-decoration: underline;
 font-weight: bold;
 }
+
+.icons{
+  width: 5rem;
+  margin: 0.5rem;
+  height: 5rem;
+}
+
+footer{
+  text-align: center;
+  text-decoration: underline;
+  padding: 2rem;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    overflow: unset;
+
+  }
+  #sidebar{
+    width: 20%;
+    padding: 1rem;
+    border: 3px solid grey;
+  
+  }
+
+
+
+
