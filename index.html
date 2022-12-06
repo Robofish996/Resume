@@ -1,297 +1,843 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Linking CSS and Bootstrap-->
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-    <title>Mathews Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <title>Mathew Riddles Resume</title>
 </head>
 
 <body>
-    <!---Header that contains image and short bio-->
-    <header id="header">
-        <img class="centerimage" src="images/Profilephoto.jpeg" alt="Picture of Mathew">
+    <!--Menu at the top of the page that goes to various locations within site-->
+    <nav class="navbar sticky-top navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand h1" href="#">Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a></></span>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#systemExperience">System Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#employmentHistory">Employment History</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Information</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Header of the page that shows an image,jumbotron with name and objective-->
+    <header class=" header mt-5">
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <picture>
+                    <source class="scaleImg" srcset="images/face.jpg" media="(max-width: 764px)">
+                    <source class="scaleImg" srcset="images/fas.jpg"" media=" (min-width: 765px)">
+                    <source class="scaleImg" srcset="images/image_full_plz_work.jpg" media="(min-width:1400px)">
+                    <img class="scaleImg" src="images/image_full_plz_work.jpg" alt="Image">
+                </picture>
 
 
-        <h1 class="heading">Mathew Andrew Riddle</h1>
-        <p>My objective is to expand my knowledge within the work environment, to share my experience with my fellow
-            work colleagues and to handle clients to the best of my abilities.</p>
+                <h1 class="display-5">Mathew Andrew Riddle</h1>
+                <hr class="my-4">
+                <p class="lead">My objective is to expand my knowledge within the work environment, to share my
+                    experience with my fellow
+                    work colleagues and to handle clients to the best of my abilities.</p>
+            </div>
+        </div>
     </header>
 
-    <!--Menu to various pages of the resume--->
-
-    <aside id="sidebar">
-        <div>
-            <nav>
-                <h3 class="heading">Menu:</h3>
-                <ul class="sidemenu">
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#systemExperience">System Experience</a></li>
-                    <li><a href="#keySkills">Key Skills</a></li>
-                    <li><a href="#employmentHistory">Employment History</a></li>
-                    <li><a href="#contact">Contact Information</a></li>
-                </ul>
-            </nav>
-        </div>
-    </aside>
-    <!--Education list that contains active link and qualifications --->
 
     <main class="main">
-        <div>
-            <article>
-                <section>
-                    <h3 class="heading" id="education">Education:</h3>
-
-                    <ul><a href="https://www.codespace.co.za/" target="_blank">Currently studying at Codespace</a></ul>
-                    <ul>Qualification: Sintrex Services Internship Programme (2019)</ul>
-                    <ul>Qualification: Sintelligent Administrator (2019)</ul>
-                    <ul>Qualification: National Certificate: Information Technology: System Support (2018)</ul>
-                    <ul>Qualification: National Senior Certificate (2015)</ul>
-
-                </section>
-
-                <!--Education list that contains active link and qualifications --->
-
-                <section>
-                    <h3 class="heading" id="systemExperience">System Experience:</h3>
-                    <ul>
-                        <li>Linux, Windows Desktop and Server, experience.</li>
-                        <li>Microsoft Server Tools such as Active Directory, SCCM.</li>
-                        <li>Linux Red Hat Server OS configuration experience.</li>
-                        <li>Microsoft Office Tools, Excel functions, commands, graphs, and report creation.</li>
-                        <li>Basic Cisco Configurations and Setting up a Network Infrastructure.</li>
-                        <li>Knowledge of Hypervisors, Oracle Virtual Box, Hyper V and VMWare.</li>
-                        <li>Symantec Endpoint Encryption and recovery.</li>
-                    </ul>
-
-                </section>
-
-                <!--List of Key Skills in short unordered list form--->
-
-                <section>
-                    <h3 class="heading" id="keySkills">Key Skills:</h3>
-                    <ul>
-                        <li>Client Relations.</li>
-                        <li>Problem Solving.</li>
-                        <li>Creative Thinking.</li>
-                        <li>Coding in HTML and css.</li>
-                        <li>Ability to preform in high pressure enviroments.</li>
-                        <li>Target Driven.</li>
-                        <li>Self Managed.</li>
-                        <li>Team player.</li>
-                    </ul>
-
-                </section>
-
-                <!--Employment history with bio of companies--->
-
-                <section>
-                    <h3 class="heading" id="employmentHistory">Employment History:</h3>
+        <!--Carousel with built in Cards to show my education-->
+        <h3 class="mt-5 heading" id="education">Education</h3>
+        <div class="carousel mt-5 mx-5 my-5 ">
+            <div id="carouselExampleIndicators" class="carousel carousel-dark slide" data-bs-ride="true">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
 
 
-                    <h4 class="heading">Computacenter:</h4>
+                    <div class="carousel-item active">
+                        <div class="card border-dark">
+                            <div class="row g-0">
+                                <div class="col-12 col-md-6">
+                                    <img src="./images/codespace_carousel.jpg" class="img-fluid rounded-start"
+                                        alt="image from codespace gallery">
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Codespace</h5>
+                                        <p class="card-text"> Currently studying at Codespace with there Software
+                                            Development Course.</p>
+                                        <ul class="card-text">Intro to Web (03 October 2022 - 04 November 2022)</ul>
+                                        <ul class="card-text">Web Design (07 November 2022 - 02 December 2022)</ul>
+                                        <ul class="card-text text-muted">More coming soon!</ul>
+                                        <a href="https://www.codespace.co.za" target="_blank"
+                                            class="btn btn-primary">Read More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <p>Computacenter is a leading independent technology partner, trusted by large corporate and public
-                        sector organisations.Who help customers to Source, Transform and Manage their technology
-                        infrastructure, to deliver digital transformation, enabling people and their business.</p>
 
-                    <p class="pst">Remote Desktop Support Analyst (01 April 2022 - Present)</p>
+                    <div class="carousel-item">
+                        <div class="card border-dark">
+                            <div class="row g-0">
+                                <div class="col-12 col-md-6">
+                                    <img src="./images/educationpage_sintrex.jpg" class="img-fluid rounded-start"
+                                        alt="image of sintrex employees">
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Sintrex Integration</h5>
+                                        <p class="card-text"> Studied at a Internship at Sintrex Integation where I
+                                            achieved the following qualifications.</p>
+                                        <ul class="card-text">Sintrex Services Internship Programme (2019)</ul>
+                                        <ul class="card-text">Sintelligent Administrator (2019)</ul>
 
-                    <ul>
-                        <li>ADHOC work from Managers</li>
-                        <li>Providing Experienced Knowledge to Service Desk.</li>
-                        <li>Managing influx of tickets with in estate.</li>
-                        <li>Developing creative solutions to aged incidents.</li>
-                        <li>Provide training to onboarding staff.</li>
-                        <li>Created and Maintained Sharepoint site for central point of communication,training and
-                            important notices.</li>
-                        <li>Managing Requests in estate.</li>
-                        <li>Automating day to day tasks to eliminate administration on the desk.</li>
-                        <li>Managing Third Parties for CC incidents.</li>
-                        <li>Progressing Aged tickets with resolver teams and cordinating resolvers.</li>
-                        <li>Improving client journey from logging requests/incidents to resolution.</li>
-                        <li>Resolving high priority incidents with high SLA times.</li>
-                    </ul>
+                                        <a href="https://sintrex.com" target="_blank" class="btn btn-primary">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                    <p class="pst">Senior First Line Analyst for OOH Shared Desk (12 February 2021 - 01 April 2022)</p>
-
-                    <ul>
-                        <li>OOH Shared Desk is a much larger desk to handle Out of Hour Support for multiple Clients.
-                        </li>
-                        <li>Taking contacts via Chats, Calls and Emails.</li>
-                        <li>Effective First Line troubleshooting.</li>
-                        <li>Logging incidents to resolvers.</li>
-                        <li>Managing personal Queue by progressing tickets.</li>
-                        <li>Working on Queue Management and progressing tickets.</li>
-                        <li>Managing Third Parties for CC incidents.</li>
-                        <li>Aiding colleagues and supported New Starters.</li>
-                        <li>ADHOC work from Managers.</li>
-                        <li>Created and Developed OOH Shared Webpage to assist colleague with finding document process
-                            faster.</li>
-                    </ul>
-
-                    <p class="pst">Junior First Line Analyst (28 February 2020 - 12 February 2021)</p>
-
-                    <ul>
-                        <li>Taking contacts via Chats, Calls and Emails.</li>
-                        <li>Effective First Line troubleshooting.</li>
-                        <li>Logging incidents to resolvers.</li>
-                        <li>Managing personal Queue by progressing tickets.</li>
-                        <li>Working on Queue Management and progressing tickets.</li>
-                        <li>Managing Third Parties for CC incidents.</li>
-                        <li>Aiding colleagues and supported New Starters.</li>
-                        <li>Assisted in New Starter Training.</li>
-                        <li>ADHOC work from Managers.</li>
-                    </ul>
-                </section>
-                <section>
-                    <h4 class="heading">Sintrex Integration:</h4>
-
-                    <p>Sintrex is an Infrastructure Management Company based in South Africa and is passionate about the
-                        innovative pursuit of excellence in providing end-to-end IT solutions and services. Through a
-                        culture of excellence, partnership and fun, Sintrex attracts and empowers staff with an
-                        inspirational work experience, world class software and globally renowned suppliers and partners
-                        to deliver services and solutions to their clients, helping to secure and enhance their IT
-                        reputations.
-                        Alviva Holdings Limited owns the majority shares in Sintrex.</p>
-
-                    <p class="pst">Network Operator (30 November 2019 - 28 February 2020)</p>
-
-                    <ul>
-                        <li>Completed the Internship at Sintrex Integration and became a permanent employee.</li>
-                        <li>Monitored the Network for Fault and Performance Alarms.</li>
-                        <li>Addition of New Sites into the system.</li>
-                        <li>Configuration of server to allow Sintrex's Monitoring systems to retrieve Information.</li>
-                        <li>Performing Health Checks on our CMDB.</li>
-                        <li>Troubleshooting on errors found.</li>
-                        <li>Creating reports on Servers and Workstations on client request.</li>
-                        <li>Configuring Windows Servers.</li>
-                        <li>Configuring Linux Servers.</li>
-                    </ul>
-                    <p class="pst">Intern Network Operator (30 November 2019 - 28 February 2020)</p>
-
-                    <ul>
-                        <li>Learnership Program 6 months of study and 6 months of Practical Workplace Experience.</li>
-                        <li>Learned from IT professionals how to meet the support needs of a fast-paced technology
-                            company
-                            serving clients around Cape Town.</li>
-                        <li>Learned a lot of IT Skills on this internship examples are Linux CLI and Operating Systems
-                            Server and Desktop, Windows Server 2016, EXCEL, CISCO, Red Hat.</li>
-                        <li>Completed and passed the Sintelligent Administrator Exam level 1.</li>
-                        <li>Completed and passed the SSDP Final.</li>
-                        <li>Worked in Western Cape Governments NOC, monitored the Network for Fault and Performance
-                            Alarms,
-                            Added New Sites, and generated reports, Health Checks and Creating Reports.</li>
-                    </ul>
-                </section>
-                <section>
-                    <h4 class="heading">CTU Training Solutions:</h4>
-
-                    <p>CTU Training Solutions (Pty) Ltd (Co. Reg No: 2005/038944/07), opened its doors in 1987 and has
-                        been
-                        developing skilled professionals ever since. With faculties in IT, Design, Business/Management,
-                        Engineering & Humanities, you have the choice to study full time (1 to 3-year qualifications and
-                        diplomas) or part time (qualifications, short courses and skills development programmes). Our
-                        national qualifications and international vendor-related certifications pave the road to success
-                        for
-                        our graduates. Career opportunities for qualified and certified candidates, from entry-level
-                        right
-                        through to professional level, are increasing rapidly. We have a passion to develop
-                        professionals
-                        and work together with the industry in creating up-to-date and relevant academic qualifications,
-                        in
-                        order to equip graduates with the right skills to successfully enter the South African job
-                        market.
-                    </p>
-
-                    <p class="pst">Student for System Support Learnership (30 November 2017 - 30 November 2018)</p>
-
-                    <ul>
-                        <li>Learnership Program 6 months of study and 6 months of Practical Workplace Experience.</li>
-                        <li>Business Communications.</li>
-                        <li>Computer Architecture (A+).</li>
-                        <li>Network Architecture (N+).</li>
-                        <li>Understanding Windows Server 2016.</li>
-                        <li>Understanding Windows OS.</li>
-                    </ul>
-                </section>
-                <section>
-                    <h4 class="heading">Incredible Connection:</h4>
-
-                    <p>Incredible Connection is now the largest consumer electronics and IT retailer in South Africa and
-                        the African continent.</p>
-
-                    <p class="pst">Salesman (2014 - 2017)</p>
-
-                    <ul>
-                        <li>Providing Customer Service.</li>
-                        <li>Preforming Hazzard Counts.</li>
-                        <li>Finding new customers via telephone Sales.</li>
-                        <li>Providing customers with quotations.</li>
-                        <li>After a sale is made or provided quotations followed up with user for feedback.</li>
-                        <li>Ordering Stock.</li>
-                        <li>Merchandising Shelfs </li>
-                        <li>Assisting with Cashing up end of day sales on tills</li>
-                        <li>STO procedure.</li>
-                        <li>OHASA Rep.</li>
-                        <li>Security Checks.</li>
-                        <li>Demo Checks.</li>
-                        <li>Key Holder.</li>
-                    </ul>
-                </section>
-                <section>
-                    <h4 class="heading">Supa Quick:</h4>
-                    <p>Although a fully South African company, Supa Quick is perfectly aligned with the tyre giant
-                        Bridgestone through its wholly-owned subsidiary, Bridgestone South Africa Retail (Pty) Ltd. We
-                        are committed to giving you the ultimate experience in convenience, service and expertise.</p>
-
-                    <ul>
-                        <li>Fitting tires.</li>
-                        <li>Providing knowledge on products.</li>
-                        <li>Client Relations.</li>
-                        <li>Safety Supervision.</li>
-                        <li>Ordering new tires.</li>
-                        <li>Shock installations.</li>
-                        <li>Brake repairs.</li>
-                        <li>Oil Changes.</li>
-                        <li>Puncher Repairs.</li>
-                        <li>Good Housekeeping.</li>
-                    </ul>
-                </section>
-                <section>
-                    <h4 class="heading">O'Malleys & Upper deck:</h4>
-
-                    <p>Bar and resturant in Nelspruit.</p>
-
-                    <ul>
-                        <li>Client Relations.</li>
-                        <li>Good House Keeping.</li>
-                        <li>Safeguarding of Float.</li>
-                        <li>Preparing Tables.</li>
-                        <li>Bookings.</li>
-                        <li>Orders.</li>
-                    </ul>
-                </section>
-            </article>
+                    <div class="carousel-item">
+                        <div class="card border-dark">
+                            <div class="row g-0">
+                                <div class="col-12 col-md-6">
+                                    <img src="./images/ctu_carousel.jpg" class="img-fluid rounded-start"
+                                        alt="CTU Campus">
+                                </div>
+                                <div class="col">
+                                    <div class="card-body">
+                                        <h5 class="card-title">CTU Training Solutions</h5>
+                                        <p class="card-text">Studied at CTU Training Solutions in Cape Town.</p>
+                                        <ul class="card-text">National Certificate: Information Technology: System
+                                            Support (2018)</ul>
+                                        <a href="https://ctutraining.ac.za" target="_blank" class="btn btn-primary">Read
+                                            More</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
         </div>
+
+
+
+        <!--Work experience with company bios-->
+        <h3 class="mb-4 mt-5 heading" id="employmentHistory">Employment History:</h3>
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-12 col-md-6 col-lg-12">
+                    <div class="card shadow systemCards">
+                        <div class="inner">
+                            <img src="./images/computacenter_location.jpg" alt="Computacenter building"
+                                class="card-img-top">
+                        </div>
+
+
+                        <div class="card-body">
+                            <h5 class="heading card-title">Computacenter:</h5>
+                            <div class="card-text">
+                                <p>Computacenter is a leading independent technology partner, trusted by large
+                                    corporate
+                                    and
+                                    public
+                                    sector organisations.Who help customers to Source, Transform and Manage their
+                                    technology
+                                    infrastructure, to deliver digital transformation, enabling people and their
+                                    business.
+                                </p>
+
+                                <p class="pst">Remote Desktop Support Analyst (01 April 2022 - Present)</p>
+
+                                <ul>
+                                    <li>ADHOC work from Managers</li>
+                                    <li>Providing Experienced Knowledge to Service Desk.</li>
+                                    <li>Managing influx of tickets with in estate.</li>
+                                    <li>Developing creative solutions to aged incidents.</li>
+                                    <li>Provide training to onboarding staff.</li>
+                                    <li>Created and Maintained Sharepoint site for central point of
+                                        communication,training
+                                        and
+                                        important notices.</li>
+                                    <li>Managing Requests in estate.</li>
+                                    <li>Automating day to day tasks to eliminate administration on the desk.</li>
+                                    <li>Managing Third Parties for CC incidents.</li>
+                                    <li>Progressing Aged tickets with resolver teams and cordinating resolvers.</li>
+                                    <li>Improving client journey from logging requests/incidents to resolution.</li>
+                                    <li>Resolving high priority incidents with high SLA times.</li>
+                                </ul>
+
+                                <p class="pst">Senior First Line Analyst for OOH Shared Desk (12 February 2021 - 01
+                                    April
+                                    2022)
+                                </p>
+
+                                <ul>
+                                    <li>OOH Shared Desk is a much larger desk to handle Out of Hour Support for
+                                        multiple
+                                        Clients.
+                                    </li>
+                                    <li>Taking contacts via Chats, Calls and Emails.</li>
+                                    <li>Effective First Line troubleshooting.</li>
+                                    <li>Logging incidents to resolvers.</li>
+                                    <li>Managing personal Queue by progressing tickets.</li>
+                                    <li>Working on Queue Management and progressing tickets.</li>
+                                    <li>Managing Third Parties for CC incidents.</li>
+                                    <li>Aiding colleagues and supported New Starters.</li>
+                                    <li>ADHOC work from Managers.</li>
+                                    <li>Created and Developed OOH Shared Webpage to assist colleague with finding
+                                        document
+                                        process
+                                        faster.</li>
+                                </ul>
+
+                                <p class="pst">Junior First Line Analyst (28 February 2020 - 12 February 2021)</p>
+
+                                <ul>
+                                    <li>Taking contacts via Chats, Calls and Emails.</li>
+                                    <li>Effective First Line troubleshooting.</li>
+                                    <li>Logging incidents to resolvers.</li>
+                                    <li>Managing personal Queue by progressing tickets.</li>
+                                    <li>Working on Queue Management and progressing tickets.</li>
+                                    <li>Managing Third Parties for CC incidents.</li>
+                                    <li>Aiding colleagues and supported New Starters.</li>
+                                    <li>Assisted in New Starter Training.</li>
+                                    <li>ADHOC work from Managers.</li>
+                                </ul>
+                                <a href="https://www.computacenter.com/who-we-are" target="_blank"
+                                    class="btn btn-primary">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-12">
+                    <div class="card shadow systemCards">
+                        <div class="inner"><img src="./images/sintrex_location_1920x757.jpg" alt="sintrex building"
+                                class="card-img-top"></div>
+
+
+                        <div class="card-body">
+                            <h5 class="heading card-title">Sintrex Integration:</h5>
+                            <div class="card-text">
+                                <p>Sintrex is an Infrastructure Management Company based in South Africa and is
+                                    passionate
+                                    about
+                                    the
+                                    innovative pursuit of excellence in providing end-to-end IT solutions and
+                                    services.
+                                    Through
+                                    a
+                                    culture of excellence, partnership and fun, Sintrex attracts and empowers staff
+                                    with
+                                    an
+                                    inspirational work experience, world class software and globally renowned
+                                    suppliers
+                                    and
+                                    partners
+                                    to deliver services and solutions to their clients, helping to secure and
+                                    enhance
+                                    their
+                                    IT
+                                    reputations.
+                                    Alviva Holdings Limited owns the majority shares in Sintrex.</p>
+
+                                <p class="pst">Network Operator (30 November 2019 - 28 February 2020)</p>
+
+                                <ul>
+                                    <li>Completed the Internship at Sintrex Integration and became a permanent
+                                        employee.
+                                    </li>
+                                    <li>Monitored the Network for Fault and Performance Alarms.</li>
+                                    <li>Addition of New Sites into the system.</li>
+                                    <li>Configuration of server to allow Sintrex's Monitoring systems to retrieve
+                                        Information.
+                                    </li>
+                                    <li>Performing Health Checks on our CMDB.</li>
+                                    <li>Troubleshooting on errors found.</li>
+                                    <li>Creating reports on Servers and Workstations on client request.</li>
+                                    <li>Configuring Windows Servers.</li>
+                                    <li>Configuring Linux Servers.</li>
+                                </ul>
+                                <p class="pst">Intern Network Operator (30 November 2019 - 28 February 2020)</p>
+
+                                <ul>
+                                    <li>Learnership Program 6 months of study and 6 months of Practical Workplace
+                                        Experience.
+                                    </li>
+                                    <li>Learned from IT professionals how to meet the support needs of a fast-paced
+                                        technology
+                                        company
+                                        serving clients around Cape Town.</li>
+                                    <li>Learned a lot of IT Skills on this internship examples are Linux CLI and
+                                        Operating
+                                        Systems
+                                        Server and Desktop, Windows Server 2016, EXCEL, CISCO, Red Hat.</li>
+                                    <li>Completed and passed the Sintelligent Administrator Exam level 1.</li>
+                                    <li>Completed and passed the SSDP Final.</li>
+                                    <li>Worked in Western Cape Governments NOC, monitored the Network for Fault and
+                                        Performance
+                                        Alarms,
+                                        Added New Sites, and generated reports, Health Checks and Creating Reports.
+                                    </li>
+                                </ul>
+                                <a href="https://www.computacenter.com/who-we-are" target="_blank"
+                                    class="btn btn-primary">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-12">
+                    <div class="card shadow systemCards">
+                        <div class="inner"> <img src="./images/ctu_location_1920x757.jpg" alt="CTU building"
+                                class="card-img-top"></div>
+
+                        <div class="card-body">
+                            <h5 class="heading card-title">CTU Training Solutions:</h5>
+                            <div class="card-text">
+                                <p>CTU Training Solutions (Pty) Ltd (Co. Reg No: 2005/038944/07), opened its doors
+                                    in
+                                    1987
+                                    and
+                                    has
+                                    been
+                                    developing skilled professionals ever since. With faculties in IT, Design,
+                                    Business/Management,
+                                    Engineering & Humanities, you have the choice to study full time (1 to 3-year
+                                    qualifications
+                                    and
+                                    diplomas) or part time (qualifications, short courses and skills development
+                                    programmes).
+                                    Our
+                                    national qualifications and international vendor-related certifications pave the
+                                    road to
+                                    success
+                                    for
+                                    our graduates. Career opportunities for qualified and certified candidates, from
+                                    entry-level
+                                    right
+                                    through to professional level, are increasing rapidly. We have a passion to
+                                    develop
+                                    professionals
+                                    and work together with the industry in creating up-to-date and relevant academic
+                                    qualifications,
+                                    in
+                                    order to equip graduates with the right skills to successfully enter the South
+                                    African
+                                    job
+                                    market.
+                                </p>
+
+                                <p class="pst">Student for System Support Learnership (30 November 2017 - 30
+                                    November
+                                    2018)
+                                </p>
+
+                                <ul>
+                                    <li>Learnership Program 6 months of study and 6 months of Practical Workplace
+                                        Experience.
+                                    </li>
+                                    <li>Business Communications.</li>
+                                    <li>Computer Architecture (A+).</li>
+                                    <li>Network Architecture (N+).</li>
+                                    <li>Understanding Windows Server 2016.</li>
+                                    <li>Understanding Windows OS.</li>
+                                </ul>
+                                <a href="https://www.computacenter.com/who-we-are" target="_blank"
+                                    class="btn btn-primary">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-12">
+                    <div class="card shadow systemCards">
+                        <div class="inner">
+                            <img src="./images/inc_1920x757.jpg" alt="Increbile Connection building"
+                                class="card-img-top">
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="heading card-title">Incredible Connection:</h5>
+                            <div class="card-text">
+                                <p>Incredible Connection is now the largest consumer electronics and IT retailer in
+                                    South
+                                    Africa
+                                    and
+                                    the African continent.</p>
+
+                                <p class="pst">Salesman (2014 - 2017)</p>
+
+                                <ul>
+                                    <li>Providing Customer Service.</li>
+                                    <li>Preforming Hazzard Counts.</li>
+                                    <li>Finding new customers via telephone Sales.</li>
+                                    <li>Providing customers with quotations.</li>
+                                    <li>After a sale is made or provided quotations followed up with user for
+                                        feedback.
+                                    </li>
+                                    <li>Ordering Stock.</li>
+                                    <li>Merchandising Shelfs </li>
+                                    <li>Assisting with Cashing up end of day sales on tills</li>
+                                    <li>STO procedure.</li>
+                                    <li>OHASA Rep.</li>
+                                    <li>Security Checks.</li>
+                                    <li>Demo Checks.</li>
+                                    <li>Key Holder.</li>
+                                </ul>
+                                <a href="https://www.computacenter.com/who-we-are" target="_blank"
+                                    class="btn btn-primary">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-12">
+                    <div class="card shadow systemCards">
+                        <div class="inner"><img src="./images/supa_1920x757.jpg" alt="Super quick building"
+                                class="card-img-top"></div>
+
+                        <div class="card-body">
+                            <h5 class="heading card-title">Supa Quick:</h5>
+                            <div class="card-text">
+                                <p>Although a fully South African company, Supa Quick is perfectly aligned with the
+                                    tyre
+                                    giant
+                                    Bridgestone through its wholly-owned subsidiary, Bridgestone South Africa Retail
+                                    (Pty)
+                                    Ltd.
+                                    We
+                                    are committed to giving you the ultimate experience in convenience, service and
+                                    expertise.
+                                </p>
+
+                                <ul>
+                                    <li>Fitting tires.</li>
+                                    <li>Providing knowledge on products.</li>
+                                    <li>Client Relations.</li>
+                                    <li>Safety Supervision.</li>
+                                    <li>Ordering new tires.</li>
+                                    <li>Shock installations.</li>
+                                    <li>Brake repairs.</li>
+                                    <li>Oil Changes.</li>
+                                    <li>Puncher Repairs.</li>
+                                    <li>Good Housekeeping.</li>
+                                </ul>
+                                <a href="https://www.computacenter.com/who-we-are" target="_blank"
+                                    class="btn btn-primary">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-12">
+                    <div class="card shadow systemCards">
+                        <div class="inner"><img src="./images/upa_1_1920x757.jpg" alt="upperdeck building"
+                                class="card-img-top"></div>
+                        <div class="card-body">
+                            <h5 class="heading card-title">O'Malleys & Upper deck:</h5>
+                            <div class="card-text">
+                                <p>Bar and resturant in Nelspruit.</p>
+
+                                <ul>
+                                    <li>Client Relations.</li>
+                                    <li>Good House Keeping.</li>
+                                    <li>Safeguarding of Float.</li>
+                                    <li>Preparing Tables.</li>
+                                    <li>Bookings.</li>
+                                    <li>Orders.</li>
+                                </ul>
+                                <a href="https://www.computacenter.com/who-we-are" target="_blank"
+                                    class="btn btn-primary">Read
+                                    More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
     </main>
-    <!--footer and icons that works with links to take to linkedin,outlook and github--->
-
-    <footer>
-        <h3 id="contact">Contact Information:</h3>
-
+    <!--Footer contain icons with animation-->
+    <footer class="mt-5 mb-3">
         <div>
+            <div>
+
+                <form id="contact" class="myform">
+                    <h5 class="pst">Enter your details and I will get back as soon as possible for urgent please see
+                        icons below:</h5>
+                    <!---Entry for Name-->
+                    <div>
+                        <label class="uni pst" for="name">Name:</label>
+                        <input class="uni" type="text" id="name" name="name" required placeholder="Enter Name">
+                    </div>
+                    <!---Entry for Address-->
+                    <div>
+
+                        <label class="uni pst" for="addr">Contact Number:</label>
+                        <input class="uni" type="text" id="addr" name="addr" placeholder="Optional">
+                    </div>
+                    <!---Drop down of countries-->
+                    <div>
+                        <label class="uni pst" for="country">Country:</label>
+                        <select id="country" name="country" required>
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Åland Islands">Åland Islands</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Algeria">Algeria</option>
+                            <option value="American Samoa">American Samoa</option>
+                            <option value="Andorra">Andorra</option>
+                            <option value="Angola">Angola</option>
+                            <option value="Anguilla">Anguilla</option>
+                            <option value="Antarctica">Antarctica</option>
+                            <option value="Antigua and Barbuda">Antigua and Barbuda</option>
+                            <option value="Argentina">Argentina</option>
+                            <option value="Armenia">Armenia</option>
+                            <option value="Aruba">Aruba</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Austria">Austria</option>
+                            <option value="Azerbaijan">Azerbaijan</option>
+                            <option value="Bahamas">Bahamas</option>
+                            <option value="Bahrain">Bahrain</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Barbados">Barbados</option>
+                            <option value="Belarus">Belarus</option>
+                            <option value="Belgium">Belgium</option>
+                            <option value="Belize">Belize</option>
+                            <option value="Benin">Benin</option>
+                            <option value="Bermuda">Bermuda</option>
+                            <option value="Bhutan">Bhutan</option>
+                            <option value="Bolivia">Bolivia</option>
+                            <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+                            <option value="Botswana">Botswana</option>
+                            <option value="Bouvet Island">Bouvet Island</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+                            <option value="Brunei Darussalam">Brunei Darussalam</option>
+                            <option value="Bulgaria">Bulgaria</option>
+                            <option value="Burkina Faso">Burkina Faso</option>
+                            <option value="Burundi">Burundi</option>
+                            <option value="Cambodia">Cambodia</option>
+                            <option value="Cameroon">Cameroon</option>
+                            <option value="Canada">Canada</option>
+                            <option value="Cape Verde">Cape Verde</option>
+                            <option value="Cayman Islands">Cayman Islands</option>
+                            <option value="Central African Republic">Central African Republic</option>
+                            <option value="Chad">Chad</option>
+                            <option value="Chile">Chile</option>
+                            <option value="China">China</option>
+                            <option value="Christmas Island">Christmas Island</option>
+                            <option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+                            <option value="Colombia">Colombia</option>
+                            <option value="Comoros">Comoros</option>
+                            <option value="Congo">Congo</option>
+                            <option value="Congo, The Democratic Republic of The">Congo, The Democratic Republic of The
+                            </option>
+                            <option value="Cook Islands">Cook Islands</option>
+                            <option value="Costa Rica">Costa Rica</option>
+                            <option value="Cote D'ivoire">Cote D'ivoire</option>
+                            <option value="Croatia">Croatia</option>
+                            <option value="Cuba">Cuba</option>
+                            <option value="Cyprus">Cyprus</option>
+                            <option value="Czech Republic">Czech Republic</option>
+                            <option value="Denmark">Denmark</option>
+                            <option value="Djibouti">Djibouti</option>
+                            <option value="Dominica">Dominica</option>
+                            <option value="Dominican Republic">Dominican Republic</option>
+                            <option value="Ecuador">Ecuador</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="El Salvador">El Salvador</option>
+                            <option value="Equatorial Guinea">Equatorial Guinea</option>
+                            <option value="Eritrea">Eritrea</option>
+                            <option value="Estonia">Estonia</option>
+                            <option value="Ethiopia">Ethiopia</option>
+                            <option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+                            <option value="Faroe Islands">Faroe Islands</option>
+                            <option value="Fiji">Fiji</option>
+                            <option value="Finland">Finland</option>
+                            <option value="France">France</option>
+                            <option value="French Guiana">French Guiana</option>
+                            <option value="French Polynesia">French Polynesia</option>
+                            <option value="French Southern Territories">French Southern Territories</option>
+                            <option value="Gabon">Gabon</option>
+                            <option value="Gambia">Gambia</option>
+                            <option value="Georgia">Georgia</option>
+                            <option value="Germany">Germany</option>
+                            <option value="Ghana">Ghana</option>
+                            <option value="Gibraltar">Gibraltar</option>
+                            <option value="Greece">Greece</option>
+                            <option value="Greenland">Greenland</option>
+                            <option value="Grenada">Grenada</option>
+                            <option value="Guadeloupe">Guadeloupe</option>
+                            <option value="Guam">Guam</option>
+                            <option value="Guatemala">Guatemala</option>
+                            <option value="Guernsey">Guernsey</option>
+                            <option value="Guinea">Guinea</option>
+                            <option value="Guinea-bissau">Guinea-bissau</option>
+                            <option value="Guyana">Guyana</option>
+                            <option value="Haiti">Haiti</option>
+                            <option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+                            <option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+                            <option value="Honduras">Honduras</option>
+                            <option value="Hong Kong">Hong Kong</option>
+                            <option value="Hungary">Hungary</option>
+                            <option value="Iceland">Iceland</option>
+                            <option value="India">India</option>
+                            <option value="Indonesia">Indonesia</option>
+                            <option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+                            <option value="Iraq">Iraq</option>
+                            <option value="Ireland">Ireland</option>
+                            <option value="Isle of Man">Isle of Man</option>
+                            <option value="Israel">Israel</option>
+                            <option value="Italy">Italy</option>
+                            <option value="Jamaica">Jamaica</option>
+                            <option value="Japan">Japan</option>
+                            <option value="Jersey">Jersey</option>
+                            <option value="Jordan">Jordan</option>
+                            <option value="Kazakhstan">Kazakhstan</option>
+                            <option value="Kenya">Kenya</option>
+                            <option value="Kiribati">Kiribati</option>
+                            <option value="Korea, Democratic People's Republic of">Korea, Democratic People's Republic
+                                of
+                            </option>
+                            <option value="Korea, Republic of">Korea, Republic of</option>
+                            <option value="Kuwait">Kuwait</option>
+                            <option value="Kyrgyzstan">Kyrgyzstan</option>
+                            <option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+                            <option value="Latvia">Latvia</option>
+                            <option value="Lebanon">Lebanon</option>
+                            <option value="Lesotho">Lesotho</option>
+                            <option value="Liberia">Liberia</option>
+                            <option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+                            <option value="Liechtenstein">Liechtenstein</option>
+                            <option value="Lithuania">Lithuania</option>
+                            <option value="Luxembourg">Luxembourg</option>
+                            <option value="Macao">Macao</option>
+                            <option value="Macedonia, The Former Yugoslav Republic of">Macedonia, The Former Yugoslav
+                                Republic
+                                of
+                            </option>
+                            <option value="Madagascar">Madagascar</option>
+                            <option value="Malawi">Malawi</option>
+                            <option value="Malaysia">Malaysia</option>
+                            <option value="Maldives">Maldives</option>
+                            <option value="Mali">Mali</option>
+                            <option value="Malta">Malta</option>
+                            <option value="Marshall Islands">Marshall Islands</option>
+                            <option value="Martinique">Martinique</option>
+                            <option value="Mauritania">Mauritania</option>
+                            <option value="Mauritius">Mauritius</option>
+                            <option value="Mayotte">Mayotte</option>
+                            <option value="Mexico">Mexico</option>
+                            <option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+                            <option value="Moldova, Republic of">Moldova, Republic of</option>
+                            <option value="Monaco">Monaco</option>
+                            <option value="Mongolia">Mongolia</option>
+                            <option value="Montenegro">Montenegro</option>
+                            <option value="Montserrat">Montserrat</option>
+                            <option value="Morocco">Morocco</option>
+                            <option value="Mozambique">Mozambique</option>
+                            <option value="Myanmar">Myanmar</option>
+                            <option value="Namibia">Namibia</option>
+                            <option value="Nauru">Nauru</option>
+                            <option value="Nepal">Nepal</option>
+                            <option value="Netherlands">Netherlands</option>
+                            <option value="Netherlands Antilles">Netherlands Antilles</option>
+                            <option value="New Caledonia">New Caledonia</option>
+                            <option value="New Zealand">New Zealand</option>
+                            <option value="Nicaragua">Nicaragua</option>
+                            <option value="Niger">Niger</option>
+                            <option value="Nigeria">Nigeria</option>
+                            <option value="Niue">Niue</option>
+                            <option value="Norfolk Island">Norfolk Island</option>
+                            <option value="Northern Mariana Islands">Northern Mariana Islands</option>
+                            <option value="Norway">Norway</option>
+                            <option value="Oman">Oman</option>
+                            <option value="Pakistan">Pakistan</option>
+                            <option value="Palau">Palau</option>
+                            <option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+                            <option value="Panama">Panama</option>
+                            <option value="Papua New Guinea">Papua New Guinea</option>
+                            <option value="Paraguay">Paraguay</option>
+                            <option value="Peru">Peru</option>
+                            <option value="Philippines">Philippines</option>
+                            <option value="Pitcairn">Pitcairn</option>
+                            <option value="Poland">Poland</option>
+                            <option value="Portugal">Portugal</option>
+                            <option value="Puerto Rico">Puerto Rico</option>
+                            <option value="Qatar">Qatar</option>
+                            <option value="Reunion">Reunion</option>
+                            <option value="Romania">Romania</option>
+                            <option value="Russian Federation">Russian Federation</option>
+                            <option value="Rwanda">Rwanda</option>
+                            <option value="Saint Helena">Saint Helena</option>
+                            <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                            <option value="Saint Lucia">Saint Lucia</option>
+                            <option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+                            <option value="Saint Vincent and The Grenadines">Saint Vincent and The Grenadines</option>
+                            <option value="Samoa">Samoa</option>
+                            <option value="San Marino">San Marino</option>
+                            <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                            <option value="Saudi Arabia">Saudi Arabia</option>
+                            <option value="Senegal">Senegal</option>
+                            <option value="Serbia">Serbia</option>
+                            <option value="Seychelles">Seychelles</option>
+                            <option value="Sierra Leone">Sierra Leone</option>
+                            <option value="Singapore">Singapore</option>
+                            <option value="Slovakia">Slovakia</option>
+                            <option value="Slovenia">Slovenia</option>
+                            <option value="Solomon Islands">Solomon Islands</option>
+                            <option value="Somalia">Somalia</option>
+                            <option value="South Africa">South Africa</option>
+                            <option value="South Georgia and The South Sandwich Islands">South Georgia and The South
+                                Sandwich
+                                Islands
+                            </option>
+                            <option value="Spain">Spain</option>
+                            <option value="Sri Lanka">Sri Lanka</option>
+                            <option value="Sudan">Sudan</option>
+                            <option value="Suriname">Suriname</option>
+                            <option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+                            <option value="Swaziland">Swaziland</option>
+                            <option value="Sweden">Sweden</option>
+                            <option value="Switzerland">Switzerland</option>
+                            <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+                            <option value="Taiwan">Taiwan</option>
+                            <option value="Tajikistan">Tajikistan</option>
+                            <option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+                            <option value="Thailand">Thailand</option>
+                            <option value="Timor-leste">Timor-leste</option>
+                            <option value="Togo">Togo</option>
+                            <option value="Tokelau">Tokelau</option>
+                            <option value="Tonga">Tonga</option>
+                            <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                            <option value="Tunisia">Tunisia</option>
+                            <option value="Turkey">Turkey</option>
+                            <option value="Turkmenistan">Turkmenistan</option>
+                            <option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+                            <option value="Tuvalu">Tuvalu</option>
+                            <option value="Uganda">Uganda</option>
+                            <option value="Ukraine">Ukraine</option>
+                            <option value="United Arab Emirates">United Arab Emirates</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="United States">United States</option>
+                            <option value="United States Minor Outlying Islands">United States Minor Outlying Islands
+                            </option>
+                            <option value="Uruguay">Uruguay</option>
+                            <option value="Uzbekistan">Uzbekistan</option>
+                            <option value="Vanuatu">Vanuatu</option>
+                            <option value="Venezuela">Venezuela</option>
+                            <option value="Viet Nam">Viet Nam</option>
+                            <option value="Virgin Islands, British">Virgin Islands, British</option>
+                            <option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+                            <option value="Wallis and Futuna">Wallis and Futuna</option>
+                            <option value="Western Sahara">Western Sahara</option>
+                            <option value="Yemen">Yemen</option>
+                            <option value="Zambia">Zambia</option>
+                            <option value="Zimbabwe">Zimbabwe</option>
+                        </select>
+                    </div>
+                    <!---Entry for Zip Code-->
+                    <div>
+                        <label class="uni pst" id="zip">Zip Code:</label>
+                        <input class="uni" type="number" required placeholder="Please enter ZIP Code">
+
+
+                    </div>
+                    <!---Entry for Email-->
+                    <div>
+                        <label class="uni pst" id="email">Email:</label>
+                        <input class="uni" type="email" required placeholder="Please enter email">
+                    </div>
+
+                    <!---About section where user can enter text-->
+                    <div>
+                        <label class="pst" for="id">How can I help?</label>
+
+                        <textarea id="abt" name="abt" rows="10" cols="100"
+                            placeholder="tell us about yourself"></textarea>
+                    </div>
+                    <!---Submit button-->
+                    <input type="submit" value="submit" class="mt-2">
+
+                </form>
+
+            </div>
             <a href="https://www.linkedin.com/in/mathew-riddle-788685168/" target="_blank" class="iconAchors"><img
-                    class="icons" src="icons/linkedin.png" alt="Mathew Riddles Linkedin"></a>
+                    class="icons" src="icons/sociallinkedin_member_70.png" alt="Mathew Riddles Linkedin"></a>
             <a href="mailto:Matthew.A.Riddle@outlook.com" target="_blank" class="iconAchors"><img class="icons"
-                    src="icons/outlook.png" alt="Mathew Riddles Email"></a>
+                    src="icons/Outlook_icon-icons.com_68993.png" alt="Mathew Riddles Email"></a>
             <a href="https://github.com/Robofish996" target="_blank" class="iconAchors"><img class="icons"
-                    src="icons/github.png" alt="Mathews github link"></a>
+                    src="icons/github-logo_icon-icons.com_73546.png" alt="Mathews github link"></a>
+
+
+
+
         </div>
     </footer>
+
+    <!--Adding scripts for website-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+
+
+
 </body>
 
 </html>

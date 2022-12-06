@@ -1,0 +1,393 @@
+/*Adjusting image for all screen sizes*/
+picture {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 17%;
+  height: 300px;
+  width: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid gold;
+}
+
+.scaleImg {
+  margin-left: auto;
+  margin-right: auto;
+  width: 17%;
+  height: 295px;
+  width: 295px;
+  object-fit: cover;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+
+}
+
+
+/* Small devices (portrait tablets and large phones, 764px and up) */
+
+@media only screen and (max-width:764px) {
+  .header {
+    text-align: center;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(0deg, rgb(102, 102, 102), rgb(201, 201, 201),  white)!important;
+  }
+  .jumbotron{
+    background-image: url("./back.webp");
+    background-size:cover;
+    color: black;
+    padding: 2rem;
+  }
+  .systemCards{
+    background-color: #F7F7F7 !important;
+  }
+  .card-title {
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  .card-text {
+    text-decoration: none;
+
+  }
+  .myform{
+    max-width: 500px;
+    margin: 2rem auto;
+    border: 2px solid;
+    padding: 2rem;
+    background-color: #F7F7F7;
+  }
+  .uni {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 0;
+  }
+  select{
+    display: block;
+    width: 100%;
+    padding: 0.25rem 0;
+  }
+  textarea{
+    display: block;
+    width: 100%;
+    
+  }
+
+
+  footer {
+    text-align: center;
+
+  }
+
+  .iconAchors {
+    text-decoration: none !important;
+  }
+
+  .icons {
+    width: 50px;
+    height: 50px;
+    animation-name: rotateImage;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    position: relative;
+  }
+
+  @keyframes rotateImage {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    20% {
+      transform: rotate(18deg);
+    }
+
+    30% {
+      transform: rotate(0deg);
+    }
+
+    40% {
+      transform: rotate(-18deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+    }
+
+    60% {
+      transform: rotate(18deg);
+    }
+
+    70% {
+      transform: rotate(0deg);
+    }
+
+    80% {
+      transform: rotate(-18deg);
+    }
+
+    90% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(18deg);
+    }
+  }
+}
+
+
+/* Medium devices (landscape tablets, 765px and up) */
+
+@media only screen and (min-width:765px) {
+  .header {
+    text-align: center;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(0deg, rgb(102, 102, 102), rgb(201, 201, 201),  white)!important;
+  }
+  .jumbotron{
+    background-image: url("./back.webp");
+    background-size:cover;
+    color: black;
+    padding: 2rem;
+  }
+  .systemCards{
+    background-color: #F7F7F7 !important;
+  }
+  .card-title {
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  .card-text {
+    text-decoration: none;
+
+  }
+  .myform{
+    max-width: 500px;
+    margin: 2rem auto;
+    border: 2px solid;
+    padding: 2rem;
+    background-color: #F7F7F7;
+  }
+  .uni {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 0;
+  }
+  select{
+    display: block;
+    width: 100%;
+    padding: 0.25rem 0;
+  }
+  textarea{
+    display: block;
+    width: 100%;
+    
+  }
+
+
+  footer {
+    text-align: center;
+
+  }
+
+  .iconAchors {
+    text-decoration: none !important;
+  }
+
+  .icons {
+    width: 50px;
+    height: 50px;
+    animation-name: rotateImage;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    position: relative;
+  }
+
+  @keyframes rotateImage {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    20% {
+      transform: rotate(18deg);
+    }
+
+    30% {
+      transform: rotate(0deg);
+    }
+
+    40% {
+      transform: rotate(-18deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+    }
+
+    60% {
+      transform: rotate(18deg);
+    }
+
+    70% {
+      transform: rotate(0deg);
+    }
+
+    80% {
+      transform: rotate(-18deg);
+    }
+
+    90% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(18deg);
+    }
+  }
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1400px and up) */
+@media only screen and (min-width:1400px) {
+
+
+  .header {
+    text-align: center;
+  }
+  .heading{
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  .jumbotron{
+    background-image: url("./back.webp");
+    background-size:contain;
+    color: black;
+    padding: 2rem;
+  }
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: linear-gradient(0deg, rgb(102, 102, 102), rgb(201, 201, 201),  white)!important;
+  }
+
+  .systemCards{
+    background-color: #F7F7F7 !important;
+  }
+  .inner{
+    overflow: hidden;
+  }
+  .inner img{
+    transition: all 1.5s ease;
+  }
+  .inner:hover img{
+    transform: scale(1.5);
+  }
+  .card-title {
+    text-decoration: underline;
+    padding: 2rem;
+  }
+
+  .card-text {
+    text-decoration: none;
+  }
+
+  .uhead {
+    text-decoration: underline;
+  }
+  .pst{
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  .myform{
+    max-width: 500px;
+    margin: 2rem auto;
+    border: 2px solid;
+    padding: 2rem;
+    background-color: #F7F7F7;
+  }
+  .uni {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 0;
+  }
+  select{
+    display: block;
+    width: 100%;
+    padding: 0.25rem 0;
+  }
+  textarea{
+    display: block;
+    width: 100%;
+    
+  }
+
+  footer {
+    text-align: center;
+   
+  }
+
+
+  .icons {
+    width: 50px !important;
+    height: 50px !important;
+    animation-name: rotateImage;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    position: relative;
+
+  }
+  .iconAchors {
+    text-decoration: none !important;
+  }
+
+
+  @keyframes rotateImage {
+    0% {
+      transform: rotate(0deg);
+    }
+
+    20% {
+      transform: rotate(18deg);
+    }
+
+    30% {
+      transform: rotate(0deg);
+    }
+
+    40% {
+      transform: rotate(-18deg);
+    }
+
+    50% {
+      transform: rotate(0deg);
+    }
+
+    60% {
+      transform: rotate(18deg);
+    }
+
+    70% {
+      transform: rotate(0deg);
+    }
+
+    80% {
+      transform: rotate(-18deg);
+    }
+
+    90% {
+      transform: rotate(0deg);
+    }
+
+    100% {
+      transform: rotate(18deg);
+    }
+  }
+
+
+}
